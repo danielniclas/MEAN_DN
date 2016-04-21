@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    function module1() {
+        var secretVal = 32;
+        return {
+            getValue: function() {
+                return secretVal;
+            },
+            setValue: function(newval){
+                secretVal = newval
+            }
+        }
+    }
+
+    var ref = module1();
+    console.log(ref.getValue());
+    ref.setValue(55);
+    console.log(ref.getValue());
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
