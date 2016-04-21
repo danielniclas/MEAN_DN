@@ -10,26 +10,45 @@
 
 </head>
 
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="myCtrl">
 
 <h1> {{2+2}} </h1>
+<h1 class="jumbotron"> My First App</h1>
+<h1> Declaratively, through directives, binding the View with the Model by the controller through scope</h1>
+<h2> {{flightInfo.title}}</h2>
+
+<ul ng-repeat="index in flightInfo.flightModel">
+    <li> Flight Name:  {{index.flightName}}  Flight Destination:  {{index.flightDestination}}</li>
+</ul>
+
+
+
+<h2> {{flightInfo.flightModel}}</h2>
+
+<input type="button" value="Click" ng-click="handleClick()">
 
 
 <script>
 
-    var myApp = angular.module("myApp",[]);
+    var dummyModel = {                                          //  Hard coded Model, or JSON or backend server
 
-    var dummyModel = [
-        {
-            flightName: "Virgin", flightDestination: 'SFO'
-        },
-        {
-            flightName: "United", flightDestination: 'LAX'
-        },
-        {
-            flightName: "American", flightDestination: 'ORD'
-        }
-    ]
+            title:  "Our First Travel App",
+            flightModel: [
+                        {flightName: "Virgin", flightDestination: 'SFO'},
+                        {flightName: "United", flightDestination: 'LAX'},
+                        {flightName: "China Air", flightDestination: 'Beijing'},
+                        {flightName: "Hawaiian", flightDestination: 'HLU'},
+                        {flightName: "American", flightDestination: 'ORD'}
+                        ]};
+
+    var app = angular.module("myApp",[]);
+    app.controller('myCtrl', function($scope){      //  Factory Function - contains logic for controller - prototypal child $scope of $rootScope
+
+        $scope.flightInfo = dummyModel;
+        $scope.handleClick = function(){alert('clicked')};       //  alert() is invoking a function  <<  function that invokes a function
+
+    });
+
 
 
 </script>
