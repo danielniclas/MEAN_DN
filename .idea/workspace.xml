@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53d7b2e0-0494-412a-8e7c-b16136ccdf65" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index1.html" afterPath="$PROJECT_DIR$/index1.html" />
     </list>
     <ignored path="MEAN_DN.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -226,7 +225,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461210248862</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MEAN Course - Private variable with Closure example - Class End">
+      <created>1461212933162</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1461212933162</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -258,7 +263,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MEAN Course" />
     <MESSAGE value="MEAN Course - Private variable with Closure example" />
-    <option name="LAST_COMMIT_MESSAGE" value="MEAN Course - Private variable with Closure example" />
+    <MESSAGE value="MEAN Course - Private variable with Closure example - Class End" />
+    <option name="LAST_COMMIT_MESSAGE" value="MEAN Course - Private variable with Closure example - Class End" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
