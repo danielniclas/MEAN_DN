@@ -9,7 +9,9 @@
 
 <script>
 
-    function module1() {
+    //  Closure to create module with namespace in JS  -- private variable
+
+    function moduleOne() {
         var secretVal = 32;
         return {
             getValue: function() {
@@ -21,7 +23,8 @@
         }
     }
 
-    var ref = module1();
+    var ref = moduleOne();
+
     console.log(ref.getValue());
     ref.setValue(55);
     console.log(ref.getValue());
